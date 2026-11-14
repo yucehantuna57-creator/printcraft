@@ -1,0 +1,23 @@
+:root{--bg:#f6f1e8;--fg:#232030;--muted:#6a6474;--accent:#d9601e;--blue:#245a80;--card:#fffdf8;--line:#e3dace}
+@media (prefers-color-scheme:dark){:root{--bg:#191720;--fg:#efeaf2;--muted:#aaa2b4;--accent:#ff9a4d;--blue:#7cb8e0;--card:#221f2b;--line:#34303e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 "Nunito",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+header.hero{background:#245a80 url(img/grid.svg);color:#fff;padding:56px 16px 48px}
+.wrap{max-width:52rem;margin:0 auto;padding:0 16px}
+.brand{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.brand img{width:112px;height:112px;border-radius:24px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+h1{font:800 clamp(2rem,6vw,2.8rem)/1.1 "Baloo 2",system-ui,sans-serif;margin:0}
+h2{font:800 1.5rem/1.2 "Baloo 2",system-ui,sans-serif;margin:40px 0 10px}
+h3{margin:22px 0 4px;font-size:1.05rem}
+.tag{opacity:.9;margin:6px 0 0;font-size:1.1rem}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.badges a{background:#fff;color:#245a80;text-decoration:none;font-weight:800;padding:10px 16px;border-radius:12px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:18px 0}
+.shots img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+ul{padding-left:1.2em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0}
+footer{color:var(--muted);font-size:.9rem;padding:40px 16px;text-align:center}
+nav.top{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}
+nav.top a{color:#fff;font-weight:700}
+.meta{color:var(--muted);font-size:.9rem}
